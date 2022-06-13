@@ -10,6 +10,16 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
+.secs, .mins, .hours, .dot
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%);
+    transform-origin: 25% 0;
+}
+
 .clock
 {
 position: relative;
@@ -24,45 +34,25 @@ background-repeat: no-repeat;
 }
 .secs 
 {
-position: absolute;
-top: 50%;
-left: 50%;
 height: 12rem;
 width: 0.1rem; 
 background-color: red;
-transform:translateX(-50%);
-transform-origin: 25% 0;
 }
 
 .mins 
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     height: 9rem;
     width: 0.3rem; 
     background-color: rgb(26, 255, 0);
-    transform: translateX(-50%);
-    transform-origin: 25% 0;
 }
 .hours {
-        position: absolute;
-        top: 50%;
-        left: 50%;
         height: 6rem;
         width: 0.5rem; 
         background-color: rgb(0, 42, 255);
-        transform: translateX(-50%);
-        transform-origin: 25% 0;
 }
 .dot {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     height: 1rem;
     width: 1rem; 
     border-radius: 50%;
     background-color: rgb(255, 0, 234);
-    transform: translateX(-50%);
-    transform-origin: 25% 0;
 }
